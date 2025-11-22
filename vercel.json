@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "quick_connect/asgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "quick_connect/asgi.py"
+    }
+  ]
+}
